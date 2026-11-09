@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عيد ميلاد سعيد يا جنا ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+:root{--pink:#ff6f9f;--deep:#a83268;--cream:#fff8f5}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Cairo',sans-serif;color:#642b48;background:radial-gradient(circle at 15% 15%,#ffe0ec 0 10%,transparent 30%),radial-gradient(circle at 85% 80%,#f8d8ff 0 8%,transparent 28%),linear-gradient(135deg,#fff7f2,#ffeaf1);overflow-x:hidden}
+main{width:min(920px,92%);margin:36px auto;padding:22px}
+.card{position:relative;text-align:center;background:#ffffffd9;border:1px solid #fff;box-shadow:0 18px 60px #a832681c;border-radius:32px;padding:clamp(24px,6vw,58px);overflow:hidden}
+.eyebrow{display:inline-block;padding:7px 17px;border-radius:30px;background:#ffe2ed;color:#a83268;font-weight:700;font-size:14px}
+h1{font-size:clamp(42px,9vw,76px);line-height:1.25;margin:18px 0 8px;color:#c13e78}
+h1 span{display:block;font-size:clamp(20px,4vw,28px);color:#75405a;margin-top:10px}
+.intro{font-size:17px;line-height:2;max-width:620px;margin:18px auto;color:#79556a}
+.cake{font-size:76px;filter:drop-shadow(0 8px 8px #d85b8b26);animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-9px) rotate(3deg)}}
+.details{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:25px 0}
+.pill{background:#fff0f5;border:1px solid #ffd3e2;border-radius:18px;padding:11px 18px;font-weight:700}
+.countdown{margin:30px auto 20px;max-width:520px}
+.countdown h2{font-size:19px;margin-bottom:14px}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.timebox{background:linear-gradient(145deg,#fff1f6,#ffe1ed);border-radius:17px;padding:12px 5px}
+.timebox strong{display:block;font-size:27px;color:#b93872}
+.timebox small{font-size:12px;color:#86536b}
+button{font:700 16px 'Cairo',sans-serif;border:0;border-radius:30px;padding:13px 25px;background:linear-gradient(100deg,#f36e9e,#bf4c86);color:white;cursor:pointer;box-shadow:0 8px 20px #c64a812e;transition:.2s}
+button:hover{transform:translateY(-2px);filter:brightness(1.04)}
+.letter{display:none;text-align:right;background:#fff8fb;border:1px dashed #f4a9c5;border-radius:22px;padding:22px;margin:24px auto 0;max-width:650px;line-height:2.1;animation:appear .5s ease}
+.letter.show{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+footer{margin-top:25px;color:#a16b83;font-size:13px}
+.heart{position:fixed;bottom:-30px;pointer-events:none;animation:floatUp linear forwards;opacity:.7}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+.sparkle{position:absolute;color:#f18caf;font-size:22px;animation:twinkle 2s infinite alternate}
+.s1{top:12%;right:8%}.s2{top:27%;left:7%;animation-delay:.7s}.s3{bottom:17%;right:12%;animation-delay:1s}
+@media(max-width:480px){main{margin:14px auto;padding:10px}.card{border-radius:25px}.timer{gap:6px}.timebox strong{font-size:22px}.intro{font-size:15px}}
+</style>
+</head>
+<body>
+<main>
+<section class="card">
+  <span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">♡</span>
+  <span class="eyebrow">يوم مميز لشخص مميز ✨</span>
+  <div class="cake">🎂</div>
+  <h1>كل سنة وإنتِ طيبة يا جنا<span>يا أجمل حكاية في يوم 25 نوفمبر ❤️</span></h1>
+  <p class="intro">في يوم زي ده، الدنيا نورت بوجودك. أتمنى تكون سنتك الجديدة مليانة ضحك وراحة بال ونجاحات، وكل حاجة نفسك فيها تلاقي طريقها ليكي.</p>
+  <div class="details">
+    <div class="pill">🎀 جنا</div>
+    <div class="pill">📅 25 نوفمبر 2007</div>
+    <div class="pill">🎉 19 سنة في عيد ميلاد 2026</div>
+  </div>
+  <div class="countdown">
+    <h2 id="countTitle">فاضل على يومك الحلو 💗</h2>
+    <div class="timer">
+      <div class="timebox"><strong id="days">--</strong><small>يوم</small></div>
+      <div class="timebox"><strong id="hours">--</strong><small>ساعة</small></div>
+      <div class="timebox"><strong id="minutes">--</strong><small>دقيقة</small></div>
+      <div class="timebox"><strong id="seconds">--</strong><small>ثانية</small></div>
+    </div>
+  </div>
+  <button id="openLetter">افتحي رسالتك الصغيرة 💌</button>
+  <div class="letter" id="letter">
+    <strong>إلى جنا الجميلة،</strong><br>
+    أتمنى كل يوم في حياتك يكون ألطف من اللي قبله، وتفضلي دايمًا محاطة بالناس اللي بيحبوكي بجد. متنسيش إنك تستاهلي كل الحاجات الحلوة، وإن ابتسامتك تفضل منورة أيامك. سنة جديدة سعيدة عليكي، وعقبال سنين كتير كلها فرحة ونجاح وأمنيات بتتحقق. ❤️<br>
+    <div style="text-align:left;margin-top:12px;color:#c13e78;font-weight:700">مع أطيب الأمنيات ✨</div>
+  </div>
+  <footer>اتعملت بكل الحب عشان يومك يبقى أحلى 🌷</footer>
+</section>
+</main>
+<script>
+const birthday = new Date(2026, 10, 25, 0, 0, 0);
+const ids = ['days','hours','minutes','seconds'];
+function updateCountdown(){
+  const now = new Date();
+  let target = new Date(birthday);
+  if(now > target) target = new Date(2027, 10, 25, 0, 0, 0);
+  let diff = Math.max(0, target - now);
+  const values = [
+    Math.floor(diff / 86400000),
+    Math.floor(diff / 3600000) % 24,
+    Math.floor(diff / 60000) % 60,
+    Math.floor(diff / 1000) % 60
+  ];
+  ids.forEach((id,i)=>document.getElementById(id).textContent=String(values[i]).padStart(2,'0'));
+  if(diff===0) document.getElementById('countTitle').textContent='النهارده يومك! عيد ميلاد سعيد يا جنا 🎉';
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+document.getElementById('openLetter').addEventListener('click',()=>{
+  document.getElementById('letter').classList.toggle('show');
+  document.getElementById('openLetter').textContent =
+    document.getElementById('letter').classList.contains('show') ? 'اقفلي الرسالة 💗' : 'افتحي رسالتك الصغيرة 💌';
+});
+function makeHeart(){
+  const heart=document.createElement('div');
+  heart.className='heart';
+  heart.textContent=['♡','♥','✦','💗'][Math.floor(Math.random()*4)];
+  heart.style.left=Math.random()*100+'vw';
+  heart.style.fontSize=(14+Math.random()*18)+'px';
+  heart.style.animationDuration=(5+Math.random()*5)+'s';
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),10000);
+}
+setInterval(makeHeart,850);
+</script>
+</body>
+</html>
